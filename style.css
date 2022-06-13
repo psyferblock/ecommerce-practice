@@ -21,7 +21,7 @@
     height:100px;
 }
 body{
-    background-color: var(--light-primary);
+    /* background-color: var(--light-primary); */
 
 
 }
@@ -110,6 +110,10 @@ body{
     display:flex;
     justify-content: center;
     gap:2rem;
+    height:80%;
+    width:80%;
+
+
 
 
 }
@@ -117,7 +121,14 @@ body{
     display:flex;
     flex-wrap: wrap;
     gap:1.6rem;
-    background-color: #555;
+    background-color: rgb(188, 166, 166);
+    border:2px solid black;
+    width:50%;
+    height:50%;
+    padding-top:5%;
+    padding-bottom:5%;
+
+
 }
 .item{
     width:auto;
