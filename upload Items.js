@@ -22,12 +22,19 @@ let button_submit_id=document.getElementById("button-submit-id")
 
 button_submit_id.addEventListener("click",submitEements)
 
-function submitEements(){
-    let data = new FormData(){
+function submitEements(e){
+    e.preventDefault()
+    let data = new FormData()
     data.append("name",item_name_id.value)
     data.append("category",item_category_id.value)
     data.append("price",item_price_id.value)
     data.append("image",button_upload_pic_id.value)
 
-    }
+    axios({
+        method:'post',
+        url:"",
+        data:data,
+    }).then((response)=>{
+        console.log(response)
+    })
 }
